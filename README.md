@@ -10,3 +10,6 @@ This repository holds the different HackerRank.com challenges I've successfully 
 
 ## Mathematics
   * Handshake - https://www.hackerrank.com/challenges/handshake
+
+## Data Structures
+ * Left Rotation - https://www.hackerrank.com/challenges/array-left-rotation/submissions/code/29554920
