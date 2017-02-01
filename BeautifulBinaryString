@@ -1,0 +1,47 @@
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int n;
+    cin >> n;
+    string B;
+    cin >> B;
+    string C = "1";
+    int counter = 0;
+    
+    for(int i = 0; i <( n - 2); i++){
+        if(B.at(i) == '0'){
+            if(B.at(i+1) == '1'){
+                if(B.at(i+2) == '0'){
+                    counter++;
+                    B.replace(i+2, 1, C);
+                }
+            }
+        }
+    }
+    cout << counter;
+    return 0;
+}
